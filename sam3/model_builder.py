@@ -37,11 +37,26 @@ from sam3.model.model_misc import (
 from sam3.model.multiplex_utils import MultiplexController
 from sam3.model.necks import Sam3DualViTDetNeck, Sam3TriViTDetNeck
 from sam3.model.position_encoding import PositionEmbeddingSine
-from sam3.model.sam1_task_predictor import SAM3InteractiveImagePredictor
 from sam3.model.sam3_image import Sam3Image, Sam3ImageOnVideoMultiGPU
-from sam3.model.sam3_tracking_predictor import Sam3TrackerPredictor
-from sam3.model.sam3_video_inference import Sam3VideoInferenceWithInstanceInteractivity
-from sam3.model.sam3_video_predictor import Sam3VideoPredictorMultiGPU
+
+# Lazy imports — only needed for video / instance-interactivity features,
+# not for basic image inference. Importing them unconditionally pulls in
+# training-only deps (pycocotools, etc.) that are unavailable on Windows.
+def _import_sam1_task_predictor():
+    from sam3.model.sam1_task_predictor import SAM3InteractiveImagePredictor
+    return SAM3InteractiveImagePredictor
+
+def _import_sam3_tracking_predictor():
+    from sam3.model.sam3_tracking_predictor import Sam3TrackerPredictor
+    return Sam3TrackerPredictor
+
+def _import_sam3_video_inference():
+    from sam3.model.sam3_video_inference import Sam3VideoInferenceWithInstanceInteractivity
+    return Sam3VideoInferenceWithInstanceInteractivity
+
+def _import_sam3_video_predictor():
+    from sam3.model.sam3_video_predictor import Sam3VideoPredictorMultiGPU
+    return Sam3VideoPredictorMultiGPU
 from sam3.model.text_encoder_ve import VETextEncoder
 from sam3.model.tokenizer_ve import SimpleTokenizer
 from sam3.model.video_tracking_multiplex import VideoTrackingDynamicMultiplex
@@ -444,13 +459,14 @@ def _create_tracker_transformer():
 
 def build_tracker(
     apply_temporal_disambiguation: bool, with_backbone: bool = False, compile_mode=None
-) -> Sam3TrackerPredictor:
+):
     """
     Build the SAM3 Tracker module for video tracking.
 
     Returns:
         Sam3TrackerPredictor: Wrapped SAM3 Tracker module
     """
+    Sam3TrackerPredictor = _import_sam3_tracking_predictor()
 
     # Create model components
     maskmem_backbone = _create_tracker_maskmem_backbone()
@@ -628,6 +644,7 @@ def build_sam3_image_model(
     # Create geometry encoder
     input_geometry_encoder = _create_geometry_encoder()
     if enable_inst_interactivity:
+        SAM3InteractiveImagePredictor = _import_sam1_task_predictor()
         sam3_pvs_base = build_tracker(apply_temporal_disambiguation=False)
         inst_predictor = SAM3InteractiveImagePredictor(sam3_pvs_base)
     else:
@@ -683,7 +700,7 @@ def build_sam3_video_model(
     apply_temporal_disambiguation: bool = True,
     device="cuda" if torch.cuda.is_available() else "cpu",
     compile=False,
-) -> Sam3VideoInferenceWithInstanceInteractivity:
+):
     """
     Build SAM3 dense tracking model.
 
@@ -698,6 +715,8 @@ def build_sam3_video_model(
         bpe_path = pkg_resources.resource_filename(
             "sam3", "assets/bpe_simple_vocab_16e6.txt.gz"
         )
+
+    Sam3VideoInferenceWithInstanceInteractivity = _import_sam3_video_inference()
 
     # Build Tracker module
     tracker = build_tracker(apply_temporal_disambiguation=apply_temporal_disambiguation)
@@ -815,6 +834,7 @@ def build_sam3_video_model(
 
 
 def build_sam3_video_predictor(*model_args, gpus_to_use=None, **model_kwargs):
+    Sam3VideoPredictorMultiGPU = _import_sam3_video_predictor()
     return Sam3VideoPredictorMultiGPU(
         *model_args, gpus_to_use=gpus_to_use, **model_kwargs
     )
