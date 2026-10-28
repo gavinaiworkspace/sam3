@@ -1,0 +1,145 @@
+model,case,prompt,target,scoring,thr,nms,gt_slices,dsc,iou,fp_slices,missed_gt_slices
+medsam3,pancreas_004,pancreas,pancreas,infer_sam,0.5,0.5,35,0.35645055670176745,0.254277172439904,33,0
+medsam3,pancreas_004,pancreas,pancreas,infer_sam,0.6,0.3,35,0.4229375951344763,0.3433790651207524,3,14
+medsam3,pancreas_004,pancreas,pancreas,presence,0.5,0.5,35,0.35645055670176745,0.254277172439904,33,0
+medsam3,pancreas_004,pancreas,pancreas,presence,0.6,0.3,35,0.4229375951344763,0.3433790651207524,3,14
+medsam3,pancreas_004,pancreatic cancer,tumour,infer_sam,0.5,0.5,14,0.16449843843434378,0.13628817673481605,45,8
+medsam3,pancreas_004,pancreatic cancer,tumour,infer_sam,0.6,0.3,14,0.0,0.0,23,13
+medsam3,pancreas_004,pancreatic cancer,tumour,presence,0.5,0.5,14,0.16449843843434378,0.13628817673481605,45,8
+medsam3,pancreas_004,pancreatic cancer,tumour,presence,0.6,0.3,14,0.0,0.0,23,13
+medsam3,pancreas_004,pancreatic mass,tumour,infer_sam,0.5,0.5,14,0.09956376136522001,0.07731506799268868,26,11
+medsam3,pancreas_004,pancreatic mass,tumour,infer_sam,0.6,0.3,14,0.0,0.0,9,13
+medsam3,pancreas_004,pancreatic mass,tumour,presence,0.5,0.5,14,0.09956376136522001,0.07731506799268868,26,11
+medsam3,pancreas_004,pancreatic mass,tumour,presence,0.6,0.3,14,0.0,0.0,9,13
+medsam3,pancreas_004,pancreatic tumor,tumour,infer_sam,0.5,0.5,14,0.14705256266119823,0.11258117478227654,33,8
+medsam3,pancreas_004,pancreatic tumor,tumour,infer_sam,0.6,0.3,14,0.0,0.0,13,11
+medsam3,pancreas_004,pancreatic tumor,tumour,presence,0.5,0.5,14,0.14705256266119823,0.11258117478227654,33,8
+medsam3,pancreas_004,pancreatic tumor,tumour,presence,0.6,0.3,14,0.0,0.0,13,11
+medsam3,pancreas_004,pancreatic tumour,tumour,infer_sam,0.5,0.5,14,0.2008652514659301,0.15593597515885946,39,8
+medsam3,pancreas_004,pancreatic tumour,tumour,infer_sam,0.6,0.3,14,0.0,0.0,11,12
+medsam3,pancreas_004,pancreatic tumour,tumour,presence,0.5,0.5,14,0.2008652514659301,0.15593597515885946,39,8
+medsam3,pancreas_004,pancreatic tumour,tumour,presence,0.6,0.3,14,0.0,0.0,11,12
+medsam3,pancreas_004,tumor,tumour,infer_sam,0.5,0.5,14,0.09735411877531995,0.07399950759803972,64,2
+medsam3,pancreas_004,tumor,tumour,infer_sam,0.6,0.3,14,0.0,0.0,29,5
+medsam3,pancreas_004,tumor,tumour,presence,0.5,0.5,14,0.09735411877531995,0.07399950759803972,64,2
+medsam3,pancreas_004,tumor,tumour,presence,0.6,0.3,14,0.0,0.0,29,5
+medsam3,pancreas_005,pancreas,pancreas,infer_sam,0.5,0.5,40,0.3949457863471094,0.29582756471082516,41,0
+medsam3,pancreas_005,pancreas,pancreas,infer_sam,0.6,0.3,40,0.5584764445605691,0.4640233586813528,6,10
+medsam3,pancreas_005,pancreas,pancreas,presence,0.5,0.5,40,0.3949457863471094,0.29582756471082516,41,0
+medsam3,pancreas_005,pancreas,pancreas,presence,0.6,0.3,40,0.5584764445605691,0.4640233586813528,6,10
+medsam3,pancreas_005,pancreatic cancer,tumour,infer_sam,0.5,0.5,10,0.0,0.0,52,4
+medsam3,pancreas_005,pancreatic cancer,tumour,infer_sam,0.6,0.3,10,0.0,0.0,40,8
+medsam3,pancreas_005,pancreatic cancer,tumour,presence,0.5,0.5,10,0.0,0.0,52,4
+medsam3,pancreas_005,pancreatic cancer,tumour,presence,0.6,0.3,10,0.0,0.0,40,8
+medsam3,pancreas_005,pancreatic mass,tumour,infer_sam,0.5,0.5,10,0.08734321550741163,0.07753036437246964,50,7
+medsam3,pancreas_005,pancreatic mass,tumour,infer_sam,0.6,0.3,10,0.0,0.0,47,9
+medsam3,pancreas_005,pancreatic mass,tumour,presence,0.5,0.5,10,0.08734321550741163,0.07753036437246964,50,7
+medsam3,pancreas_005,pancreatic mass,tumour,presence,0.6,0.3,10,0.0,0.0,47,9
+medsam3,pancreas_005,pancreatic tumor,tumour,infer_sam,0.5,0.5,10,0.08805460750853242,0.07865853658536585,50,5
+medsam3,pancreas_005,pancreatic tumor,tumour,infer_sam,0.6,0.3,10,0.0,0.0,47,7
+medsam3,pancreas_005,pancreatic tumor,tumour,presence,0.5,0.5,10,0.08805460750853242,0.07865853658536585,50,5
+medsam3,pancreas_005,pancreatic tumor,tumour,presence,0.6,0.3,10,0.0,0.0,47,7
+medsam3,pancreas_005,pancreatic tumour,tumour,infer_sam,0.5,0.5,10,0.08714448236632537,0.07721774193548388,50,5
+medsam3,pancreas_005,pancreatic tumour,tumour,infer_sam,0.6,0.3,10,0.0,0.0,47,8
+medsam3,pancreas_005,pancreatic tumour,tumour,presence,0.5,0.5,10,0.08714448236632537,0.07721774193548388,50,5
+medsam3,pancreas_005,pancreatic tumour,tumour,presence,0.6,0.3,10,0.0,0.0,47,8
+medsam3,pancreas_005,tumor,tumour,infer_sam,0.5,0.5,10,0.011415931747547698,0.006042567242384761,79,2
+medsam3,pancreas_005,tumor,tumour,infer_sam,0.6,0.3,10,0.0,0.0,50,4
+medsam3,pancreas_005,tumor,tumour,presence,0.5,0.5,10,0.011415931747547698,0.006042567242384761,79,2
+medsam3,pancreas_005,tumor,tumour,presence,0.6,0.3,10,0.0,0.0,50,4
+medsam3,pancreas_006,pancreas,pancreas,infer_sam,0.5,0.5,25,0.2854880862759542,0.20540475458382296,31,2
+medsam3,pancreas_006,pancreas,pancreas,infer_sam,0.6,0.3,25,0.32260306796980565,0.24158122137265764,17,6
+medsam3,pancreas_006,pancreas,pancreas,presence,0.5,0.5,25,0.2854880862759542,0.20540475458382296,31,2
+medsam3,pancreas_006,pancreas,pancreas,presence,0.6,0.3,25,0.32260306796980565,0.24158122137265764,17,6
+medsam3,pancreas_006,pancreatic cancer,tumour,infer_sam,0.5,0.5,10,0.49582889706551575,0.425987026911612,48,1
+medsam3,pancreas_006,pancreatic cancer,tumour,infer_sam,0.6,0.3,10,0.49582889706551575,0.425987026911612,27,4
+medsam3,pancreas_006,pancreatic cancer,tumour,presence,0.5,0.5,10,0.49582889706551575,0.425987026911612,48,1
+medsam3,pancreas_006,pancreatic cancer,tumour,presence,0.6,0.3,10,0.49582889706551575,0.425987026911612,27,4
+medsam3,pancreas_006,pancreatic mass,tumour,infer_sam,0.5,0.5,10,0.5657976613265521,0.4795040543817854,23,2
+medsam3,pancreas_006,pancreatic mass,tumour,infer_sam,0.6,0.3,10,0.3939894386301715,0.32892089519943757,11,5
+medsam3,pancreas_006,pancreatic mass,tumour,presence,0.5,0.5,10,0.5657976613265521,0.4795040543817854,23,2
+medsam3,pancreas_006,pancreatic mass,tumour,presence,0.6,0.3,10,0.3939894386301715,0.32892089519943757,11,5
+medsam3,pancreas_006,pancreatic tumor,tumour,infer_sam,0.5,0.5,10,0.48548126393700464,0.4116515566403917,24,2
+medsam3,pancreas_006,pancreatic tumor,tumour,infer_sam,0.6,0.3,10,0.3997907481300163,0.33668794674228397,13,5
+medsam3,pancreas_006,pancreatic tumor,tumour,presence,0.5,0.5,10,0.48548126393700464,0.4116515566403917,24,2
+medsam3,pancreas_006,pancreatic tumor,tumour,presence,0.6,0.3,10,0.3997907481300163,0.33668794674228397,13,5
+medsam3,pancreas_006,pancreatic tumour,tumour,infer_sam,0.5,0.5,10,0.5512307895578392,0.46029700301928705,28,1
+medsam3,pancreas_006,pancreatic tumour,tumour,infer_sam,0.6,0.3,10,0.4847443030713527,0.4104994321690846,15,3
+medsam3,pancreas_006,pancreatic tumour,tumour,presence,0.5,0.5,10,0.5512307895578392,0.46029700301928705,28,1
+medsam3,pancreas_006,pancreatic tumour,tumour,presence,0.6,0.3,10,0.4847443030713527,0.4104994321690846,15,3
+medsam3,pancreas_006,tumor,tumour,infer_sam,0.5,0.5,10,0.5224786480186545,0.4660194968148697,58,3
+medsam3,pancreas_006,tumor,tumour,infer_sam,0.6,0.3,10,0.5224786480186545,0.4660194968148697,27,3
+medsam3,pancreas_006,tumor,tumour,presence,0.5,0.5,10,0.5224786480186545,0.4660194968148697,58,3
+medsam3,pancreas_006,tumor,tumour,presence,0.6,0.3,10,0.5224786480186545,0.4660194968148697,27,3
+sam3,pancreas_004,pancreas,pancreas,infer_sam,0.5,0.5,35,0.7657705479661115,0.6283147032434098,17,0
+sam3,pancreas_004,pancreas,pancreas,infer_sam,0.6,0.3,35,0.7461115710353192,0.6133299937632875,6,1
+sam3,pancreas_004,pancreas,pancreas,presence,0.5,0.5,35,0.7309140026462615,0.6029780268895814,0,2
+sam3,pancreas_004,pancreas,pancreas,presence,0.6,0.3,35,0.7099439029784874,0.5864145756457481,0,3
+sam3,pancreas_004,pancreatic cancer,tumour,infer_sam,0.5,0.5,14,0.04540775477524877,0.03328303152246814,39,11
+sam3,pancreas_004,pancreatic cancer,tumour,infer_sam,0.6,0.3,14,0.0,0.0,19,14
+sam3,pancreas_004,pancreatic cancer,tumour,presence,0.5,0.5,14,0.0,0.0,1,14
+sam3,pancreas_004,pancreatic cancer,tumour,presence,0.6,0.3,14,0.0,0.0,0,14
+sam3,pancreas_004,pancreatic mass,tumour,infer_sam,0.5,0.5,14,0.8083680597298228,0.6888057345997047,54,0
+sam3,pancreas_004,pancreatic mass,tumour,infer_sam,0.6,0.3,14,0.4575745130511515,0.3889074663827636,23,6
+sam3,pancreas_004,pancreatic mass,tumour,presence,0.5,0.5,14,0.0,0.0,0,14
+sam3,pancreas_004,pancreatic mass,tumour,presence,0.6,0.3,14,0.0,0.0,0,14
+sam3,pancreas_004,pancreatic tumor,tumour,infer_sam,0.5,0.5,14,0.15741394476517281,0.12654189785551476,41,11
+sam3,pancreas_004,pancreatic tumor,tumour,infer_sam,0.6,0.3,14,0.0,0.0,20,14
+sam3,pancreas_004,pancreatic tumor,tumour,presence,0.5,0.5,14,0.0,0.0,0,14
+sam3,pancreas_004,pancreatic tumor,tumour,presence,0.6,0.3,14,0.0,0.0,0,14
+sam3,pancreas_004,pancreatic tumour,tumour,infer_sam,0.5,0.5,14,0.10923747466444567,0.09022958264402876,44,12
+sam3,pancreas_004,pancreatic tumour,tumour,infer_sam,0.6,0.3,14,0.0,0.0,21,14
+sam3,pancreas_004,pancreatic tumour,tumour,presence,0.5,0.5,14,0.0,0.0,0,14
+sam3,pancreas_004,pancreatic tumour,tumour,presence,0.6,0.3,14,0.0,0.0,0,14
+sam3,pancreas_004,tumor,tumour,infer_sam,0.5,0.5,14,0.0,0.0,0,14
+sam3,pancreas_004,tumor,tumour,infer_sam,0.6,0.3,14,0.0,0.0,0,14
+sam3,pancreas_004,tumor,tumour,presence,0.5,0.5,14,0.0,0.0,0,14
+sam3,pancreas_004,tumor,tumour,presence,0.6,0.3,14,0.0,0.0,0,14
+sam3,pancreas_005,pancreas,pancreas,infer_sam,0.5,0.5,40,0.7518444411919382,0.6288411355105734,2,1
+sam3,pancreas_005,pancreas,pancreas,infer_sam,0.6,0.3,40,0.7301354531993842,0.6113476996516087,1,2
+sam3,pancreas_005,pancreas,pancreas,presence,0.5,0.5,40,0.6929357906188082,0.5817292041569152,0,5
+sam3,pancreas_005,pancreas,pancreas,presence,0.6,0.3,40,0.6929357906188082,0.5817292041569152,0,5
+sam3,pancreas_005,pancreatic cancer,tumour,infer_sam,0.5,0.5,10,0.1296684263564116,0.09804434624792867,20,3
+sam3,pancreas_005,pancreatic cancer,tumour,infer_sam,0.6,0.3,10,0.1296684263564116,0.09804434624792867,4,5
+sam3,pancreas_005,pancreatic cancer,tumour,presence,0.5,0.5,10,0.0,0.0,0,10
+sam3,pancreas_005,pancreatic cancer,tumour,presence,0.6,0.3,10,0.0,0.0,0,10
+sam3,pancreas_005,pancreatic mass,tumour,infer_sam,0.5,0.5,10,0.4258505378315469,0.29739131582929534,41,0
+sam3,pancreas_005,pancreatic mass,tumour,infer_sam,0.6,0.3,10,0.3746664860652638,0.2675358336622128,28,2
+sam3,pancreas_005,pancreatic mass,tumour,presence,0.5,0.5,10,0.0,0.0,0,10
+sam3,pancreas_005,pancreatic mass,tumour,presence,0.6,0.3,10,0.0,0.0,0,10
+sam3,pancreas_005,pancreatic tumor,tumour,infer_sam,0.5,0.5,10,0.2088234885044685,0.16337771758691363,29,1
+sam3,pancreas_005,pancreatic tumor,tumour,infer_sam,0.6,0.3,10,0.12947213715311714,0.09760710826791721,7,6
+sam3,pancreas_005,pancreatic tumor,tumour,presence,0.5,0.5,10,0.0,0.0,0,10
+sam3,pancreas_005,pancreatic tumor,tumour,presence,0.6,0.3,10,0.0,0.0,0,10
+sam3,pancreas_005,pancreatic tumour,tumour,infer_sam,0.5,0.5,10,0.21028385604856195,0.16540905069417539,30,1
+sam3,pancreas_005,pancreatic tumour,tumour,infer_sam,0.6,0.3,10,0.1302838560485619,0.09874238402750875,6,5
+sam3,pancreas_005,pancreatic tumour,tumour,presence,0.5,0.5,10,0.0,0.0,0,10
+sam3,pancreas_005,pancreatic tumour,tumour,presence,0.6,0.3,10,0.0,0.0,0,10
+sam3,pancreas_005,tumor,tumour,infer_sam,0.5,0.5,10,0.0,0.0,0,10
+sam3,pancreas_005,tumor,tumour,infer_sam,0.6,0.3,10,0.0,0.0,0,10
+sam3,pancreas_005,tumor,tumour,presence,0.5,0.5,10,0.0,0.0,0,10
+sam3,pancreas_005,tumor,tumour,presence,0.6,0.3,10,0.0,0.0,0,10
+sam3,pancreas_006,pancreas,pancreas,infer_sam,0.5,0.5,25,0.6458308221764298,0.5237804744982645,7,3
+sam3,pancreas_006,pancreas,pancreas,infer_sam,0.6,0.3,25,0.5219266542704629,0.42574239745076725,1,8
+sam3,pancreas_006,pancreas,pancreas,presence,0.5,0.5,25,0.5822654057080718,0.4746949134751494,0,6
+sam3,pancreas_006,pancreas,pancreas,presence,0.6,0.3,25,0.4567691852990755,0.3707777652128956,0,10
+sam3,pancreas_006,pancreatic cancer,tumour,infer_sam,0.5,0.5,10,0.6514679006108303,0.5508177342588165,26,2
+sam3,pancreas_006,pancreatic cancer,tumour,infer_sam,0.6,0.3,10,0.08427128427128427,0.07281795511221946,9,9
+sam3,pancreas_006,pancreatic cancer,tumour,presence,0.5,0.5,10,0.16935006091632598,0.14685021317673558,2,8
+sam3,pancreas_006,pancreatic cancer,tumour,presence,0.6,0.3,10,0.0,0.0,0,10
+sam3,pancreas_006,pancreatic mass,tumour,infer_sam,0.5,0.5,10,0.7148929568847608,0.6058670492500516,30,1
+sam3,pancreas_006,pancreatic mass,tumour,infer_sam,0.6,0.3,10,0.5846129020207977,0.5044764580359172,6,3
+sam3,pancreas_006,pancreatic mass,tumour,presence,0.5,0.5,10,0.08974466303892842,0.08139711465451785,0,9
+sam3,pancreas_006,pancreatic mass,tumour,presence,0.6,0.3,10,0.0,0.0,0,10
+sam3,pancreas_006,pancreatic tumor,tumour,infer_sam,0.5,0.5,10,0.5201263642865566,0.42055839621169344,27,3
+sam3,pancreas_006,pancreatic tumor,tumour,infer_sam,0.6,0.3,10,0.0822716049382716,0.06988255033557048,14,9
+sam3,pancreas_006,pancreatic tumor,tumour,presence,0.5,0.5,10,0.0822716049382716,0.06988255033557048,0,9
+sam3,pancreas_006,pancreatic tumor,tumour,presence,0.6,0.3,10,0.0,0.0,0,10
+sam3,pancreas_006,pancreatic tumour,tumour,infer_sam,0.5,0.5,10,0.5192345436539288,0.41798074643963246,30,3
+sam3,pancreas_006,pancreatic tumour,tumour,infer_sam,0.6,0.3,10,0.08261296660117878,0.0703765690376569,12,9
+sam3,pancreas_006,pancreatic tumour,tumour,presence,0.5,0.5,10,0.08261296660117878,0.0703765690376569,0,9
+sam3,pancreas_006,pancreatic tumour,tumour,presence,0.6,0.3,10,0.0,0.0,0,10
+sam3,pancreas_006,tumor,tumour,infer_sam,0.5,0.5,10,0.08641750227894257,0.07608346709470305,2,9
+sam3,pancreas_006,tumor,tumour,infer_sam,0.6,0.3,10,0.0,0.0,1,10
+sam3,pancreas_006,tumor,tumour,presence,0.5,0.5,10,0.0,0.0,0,10
+sam3,pancreas_006,tumor,tumour,presence,0.6,0.3,10,0.0,0.0,0,10

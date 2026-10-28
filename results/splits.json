@@ -1,0 +1,47 @@
+{
+  "seed": 0,
+  "eval_core": [
+    "pancreas_004",
+    "pancreas_005",
+    "pancreas_006"
+  ],
+  "support": [
+    "pancreas_015",
+    "pancreas_016",
+    "pancreas_032",
+    "pancreas_040",
+    "pancreas_078",
+    "pancreas_084",
+    "pancreas_129",
+    "pancreas_145",
+    "pancreas_197",
+    "pancreas_256",
+    "pancreas_265",
+    "pancreas_268",
+    "pancreas_298",
+    "pancreas_376",
+    "pancreas_413"
+  ],
+  "eval_heldout": [
+    "pancreas_021",
+    "pancreas_035",
+    "pancreas_094",
+    "pancreas_103",
+    "pancreas_105",
+    "pancreas_107",
+    "pancreas_148",
+    "pancreas_159",
+    "pancreas_198",
+    "pancreas_246",
+    "pancreas_247",
+    "pancreas_254",
+    "pancreas_261",
+    "pancreas_262",
+    "pancreas_283",
+    "pancreas_297",
+    "pancreas_315",
+    "pancreas_343",
+    "pancreas_361",
+    "pancreas_418"
+  ]
+}

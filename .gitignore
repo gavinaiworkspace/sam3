@@ -124,6 +124,7 @@ dmypy.json
 # Model weights and checkpoints
 *.pth
 *.pt
+!results/**/*.pt
 *.bin
 *.ckpt
 *.safetensors
