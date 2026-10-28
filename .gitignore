@@ -152,3 +152,12 @@ Thumbs.db
 # BPE vocabulary files
 *.bpe
 *.vocab
+
+# Dataset, server envs and installer (from server-side .gitignore)
+Task07_Pancreas/
+._*
+*.nii.gz
+*.tar
+sam3_env/
+same_env/
+miniconda.sh
