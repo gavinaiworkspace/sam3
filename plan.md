@@ -91,7 +91,7 @@ ConceptBank candidate prompts: the 5 Thesis A tumour prompts plus "pancreas" var
 
 ## 3. Runpod Pod setup
 
-All Runpod steps are done by Claude through the Runpod MCP tools, which call the same REST API as `runpodctl`. File transfer and the remote shell use plain SSH from this laptop. `runpodctl` is not installed locally and is not needed.
+All Runpod steps are done through the Runpod MCP tools, which call the same REST API as `runpodctl`. File transfer and the remote shell use plain SSH from this laptop. `runpodctl` is not installed locally and is not needed.
 
 ### Live reads on 2026-10-28 (redo these immediately before creating anything)
 
